@@ -1,26 +1,18 @@
-//SOMANDO
-
-#include <stdio.h> //arquivo de cabecalho chamado pelo pre-processador
+#include<stdio.h>
 
 int main()
 {
-	int int1, int2, soma; //sao considerados identificadores
+	int n1, n2, soma;
 
-	printf("entre com o primeiro numero inteiro:\n");
-	scanf("%d", &int1);
-	// %d -> string de controle de formato ou especificador de conversao
-	// %d numero inteiro (decimal integer)
+	printf("\nDIGITE O PRIMEIRO NUMERO: ");
+	scanf("%d", &n1); //OPERADOR DE ENDERECO
+	
+	printf("\nDIGITE O SEGUNDO NUMERO:");
+	scanf("%d", &n2);
 
-	// & -> operador de endereco
-	// qual o local de memoria que a variavel esta armazenada?
+	soma = n1 + n2;
 
-	printf("entre com o segundo numero inteiro:\n");
-	scanf("%d", &int2);
+	printf("\nA soma eh: %d\n", soma);
 
-	soma = int1 + int2;
-
-	// = -> operador de atribuicao
-	printf("a soma é =  %d\n", soma);
-
-	return 0; //status de saida para o OS
+	return 0;
 }
